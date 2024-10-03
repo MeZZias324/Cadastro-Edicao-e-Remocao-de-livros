@@ -1,0 +1,70 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro para Livros</title>
+    <!-- link do css -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- titulo e navegação das paginas-->
+     <header>
+        <h1>Cadastro de Livros</h1>
+            
+            <nav>
+                <a href="index.html">Cadastrar Livro</a>
+                <a href="livros.html">Lista dos Livros</a>
+            </nav>
+
+     </header>
+     <!--formulário para cadastro dos livros-->
+     <main>
+        <form id="forLivro">
+            <div class="formGrupo">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="formGrupo">
+                <label fpr="autor">Autor:</label>
+                <input type="text" id="autor" name="autor" required>
+            </div>
+            <div class="formGrupo">
+                <label for="ano">Ano:</label>
+                <input type="number" id="ano" name="ano" required>
+            </div>
+            <div class="formGrupo">
+                <label for="genero">Gênero:</label>
+                <input type="text" id="genero" nome="genero" required>
+            </div>
+            <div class="formGrupo">
+                <label for="preco">Preço:</label>
+                <input type="number" id="preco" name="preco" required>
+            </div>
+            <div class="formGrupo">
+                <label for="paginas">Número de páginas:</label>
+                <input type="number" id="paginas" name="paginas" required>
+            </div>
+            <div class="formGrupo">
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" name="descricao" required></textarea>
+            </div>
+            <div class="formGrupo">
+                <label for="isbn">ISBN:</label>
+                <input type="text" id="isbn" name="isbn" required>
+            </div>
+<div class="formGrupo">
+    <label for="editora">Editora:</label>
+    <input type="text" id="editora" name="editora" required>
+</div>
+<div class="formGrupo">
+    <label for="capa">Capa do Livro:</label>
+    <input type="file" id="capa" name="capa" accept="image/*">
+</div>
+<button type="submit">Cadastrar Livro</button>
+        </form>
+     </main>
+     <!-- linkando javascript-->
+      <script src="script.js"></script>
+    
+</body>
+</html>

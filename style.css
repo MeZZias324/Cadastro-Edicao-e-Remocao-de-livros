@@ -1,0 +1,131 @@
+/* Resetando margens e preenchimentos de todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #0a0a0a;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navegação */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para o formulário */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.forGrupo {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Estilo para os inputs */
+input[type="text"], input[type="number"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Estilo para a listagem de livros */
+#livrosContainer {
+    margin: 20px auto;
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.livroItem {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 45%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.livroItem img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.livroItem h3 {
+    margin-bottom: 10px;
+}
+
+.livroItem button {
+    margin-top: 10px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .livroItem {
+        width: 100%;
+    }
+}
+
+
+body {
+    background-image: url('https://buscasimples.com/uploads/content/image/88478/Design_sem_nome__1___1_.jpg'); /* Caminho da imagem */
+    background-size: cover;  /* A imagem cobre toda a área */
+    background-position: center;  /* A imagem é centralizada */
+    background-repeat: no-repeat;  /* A imagem não se repete */
+    margin: 0; /* Remove margens padrão do body */
+    height: 100vh; /* Garante que o corpo ocupe toda a altura da janela */
+}
